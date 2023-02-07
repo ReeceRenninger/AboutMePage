@@ -14,4 +14,8 @@ Website providing basic information about me to any user that feels like getting
 
  -I feel more comfortable with if and else if statements as we do more of these projects.
 
+ -Project took me about 30 minutes to complete the required parts, set aside about 2 hours to continue styling for experimentation
+
+-
+
 Author: Reece
