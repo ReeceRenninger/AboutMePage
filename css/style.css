@@ -1,4 +1,16 @@
+body{
+
+}
 h1 {
   font-size: 5vw;
   font-weight: 500;
+}
+
+#selfiePic{
+  height: 600px;
+  border-radius: 25%;
+}
+
+p{
+  font-family: 'Courier New', Courier, monospace;
 }
