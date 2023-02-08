@@ -9,6 +9,23 @@ h1 {
   text-align: center;
 }
 
+h2{
+  font-size: 50px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.a{
+  list-style-type: square;
+}
+
+.b{
+  list-style-type: square;
+}
+
+li{
+  font-size: large;
+}
+
 #selfiePic{
   height: 600px;
   border-radius: 25%;
