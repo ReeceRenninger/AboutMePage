@@ -15,11 +15,15 @@ h2{
 }
 
 .a{
-  list-style-type: square;
+  background-color: orange;
+  border: 1px dashed green;
+  color: rgb(4, 36, 4);
 }
 
 .b{
-  list-style-type: square;
+  background-color: green;
+  color: white;
+  border: 1px solid pink;
 }
 
 li{
