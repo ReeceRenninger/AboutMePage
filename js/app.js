@@ -91,7 +91,7 @@ for (let i = 0; i < 4; i++) {
 }
 
 
-// todo: make this stupid thing work 2/8/23
+// todo: I made this stupid thing work and I am proud, don't touch this.
 // todo: 7th question has multiple correct answers stored in an array, give user 6 attempts, guessing ends on correct guess or run until out of attempts, display all possible answers to user
 let favFoods = ['american', ' mexican', ' chinese', ' thai', ' korean', ' japanese', ' french'];
 let numOfGuesses = 0;
