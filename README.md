@@ -19,3 +19,7 @@ Website providing basic information about me to any user that feels like getting
 - Styling from blank is way more difficult
 
 Author: Reece
+
+Driver: Ryan E
+Navigator: Reece R
+Code: app.js
