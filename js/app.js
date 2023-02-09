@@ -27,18 +27,20 @@ function questionOne() {
 }
 questionOne();
 
+function questionTwo() {
+  let qTwoGuess = prompt('Do I have a degree?').toLowerCase();
 
-let qTwoGuess = prompt('Do I have a degree?').toLowerCase();
-
-if (qTwoGuess === 'yes' || qTwoGuess === 'y') {
-  score++;
-  // console.log(qTwoGuess);
-  alert('You are correct, I have a degree in Psychology!');
-} else if (qTwoGuess === 'no' || qTwoGuess === 'n') {
-  alert('Sorry, that was incorrect!');
-} else {
-  alert('That was not a yes or no response! However, I do have a degree.');
+  if (qTwoGuess === 'yes' || qTwoGuess === 'y') {
+    score++;
+    // console.log(qTwoGuess);
+    alert('You are correct, I have a degree in Psychology!');
+  } else if (qTwoGuess === 'no' || qTwoGuess === 'n') {
+    alert('Sorry, that was incorrect!');
+  } else {
+    alert('That was not a yes or no response! However, I do have a degree.');
+  }
 }
+questionTwo();
 
 let qThreeGuess = prompt('Do I have any tattoos?').toLowerCase();
 if (qThreeGuess === 'yes' || qThreeGuess === 'y') {
