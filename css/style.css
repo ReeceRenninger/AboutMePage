@@ -1,5 +1,8 @@
+
 body{
   background-color: turquoise;
+  margin: auto;
+  width: 95%; 
 }
 
 h1 {
@@ -14,20 +17,12 @@ h2{
   font-family:'Times New Roman', Times, serif;
 }
 
-.a{
-  background-color: orange;
-  border: 1px dashed green;
-  color: rgb(4, 36, 4);
+ul{
+  list-style-type: disc;
 }
 
-.b{
-  background-color: green;
-  color: white;
-  border: 1px solid pink;
-}
-
-li{
-  font-size: large;
+ol{
+  list-style-type: numbers;
 }
 
 #selfiePic{
@@ -39,13 +34,6 @@ li{
   border: 2px dashed red;
 }
 
-p{
-  background-color: yellow;
-  border: 1px solid black;
-  font-weight: 200;
-  font-stretch:expanded;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 footer{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
