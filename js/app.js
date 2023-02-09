@@ -86,24 +86,26 @@ questionFive();
 // DONE: create a feedback loop of too high or too low until user guesses correct numeric value answer, convert answer to number from string, allow 4 chances to get correct answer, after all attempts tell user correct answer
 // DONE: MAKE THE PROMPT ONLY ACCEPT NUMERICAL VALUES, THIS THING IS A JERK
 
-let myCodeTime = 3;
+function questionSix() {
+  let myCodeTime = 3;
 
-for (let i = 0; i < 4; i++) {
-  let qSixGuess = +prompt('How many hours do I spend coding outside of the classroom every day?');
-  if(qSixGuess < myCodeTime) {
-    alert('That guess was too low! Try again.');
-  }else if(qSixGuess > myCodeTime) {
-    alert('That guess was too high! Try again.');
-  }else if (qSixGuess === myCodeTime) {
-    score++;
-    alert(`Nice job, ${userName}! The correct answer was 3`);
-    i = 5;
-    break;
-  }if (i === 3){
-    alert('Sorry, no more tries! The answer was 3!');
+  for (let i = 0; i < 4; i++) {
+    let qSixGuess = +prompt('How many hours do I spend coding outside of the classroom every day?');
+    if(qSixGuess < myCodeTime) {
+      alert('That guess was too low! Try again.');
+    }else if(qSixGuess > myCodeTime) {
+      alert('That guess was too high! Try again.');
+    }else if (qSixGuess === myCodeTime) {
+      score++;
+      alert(`Nice job, ${userName}! The correct answer was 3`);
+      i = 5;
+      break;
+    }if (i === 3){
+      alert('Sorry, no more tries! The answer was 3!');
+    }
   }
 }
-
+questionSix();
 
 
 // todo: I made this stupid thing work and I am proud, don't touch this.
