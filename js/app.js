@@ -11,98 +11,98 @@ let userName = prompt('Hello! What is your name?'); {
 
 
 
-// // todo: prompt 5 yes/no or y/n questions for the user to guess and alert when they are correct or incorrect
+// todo: prompt 5 yes/no or y/n questions for the user to guess and alert when they are correct or incorrect
 
-// let qOneGuess = prompt('Do I own dogs?').toLowerCase();
+let qOneGuess = prompt('Do I own dogs?').toLowerCase();
 
-// if (qOneGuess === 'yes' || qOneGuess === 'y') {
-//   score++;
-//   // console.log(qOneGuess);
-//   alert('You are correct! I have two dogs, Zelda and Link.');
-// } else if (qOneGuess === 'no' || qOneGuess === 'n') {
-//   alert('Sorry, that was incorrect!');
-// } else {
-//   alert('That was not a yes or no response! However, I do own dogs!');
-// }
+if (qOneGuess === 'yes' || qOneGuess === 'y') {
+  score++;
+  // console.log(qOneGuess);
+  alert('You are correct! I have two dogs, Zelda and Link.');
+} else if (qOneGuess === 'no' || qOneGuess === 'n') {
+  alert('Sorry, that was incorrect!');
+} else {
+  alert('That was not a yes or no response! However, I do own dogs!');
+}
 
-// let qTwoGuess = prompt('Do I have a degree?').toLowerCase();
+let qTwoGuess = prompt('Do I have a degree?').toLowerCase();
 
-// if (qTwoGuess === 'yes' || qTwoGuess === 'y') {
-//   score++;
-//   // console.log(qTwoGuess);
-//   alert('You are correct, I have a degree in Psychology!');
-// } else if (qTwoGuess === 'no' || qTwoGuess === 'n') {
-//   alert('Sorry, that was incorrect!');
-// } else {
-//   alert('That was not a yes or no response! However, I do have a degree.');
-// }
+if (qTwoGuess === 'yes' || qTwoGuess === 'y') {
+  score++;
+  // console.log(qTwoGuess);
+  alert('You are correct, I have a degree in Psychology!');
+} else if (qTwoGuess === 'no' || qTwoGuess === 'n') {
+  alert('Sorry, that was incorrect!');
+} else {
+  alert('That was not a yes or no response! However, I do have a degree.');
+}
 
-// let qThreeGuess = prompt('Do I have any tattoos?').toLowerCase();
-// if (qThreeGuess === 'yes' || qThreeGuess === 'y') {
-//   score++;
-//   // console.log(qThreeGuess);
-//   alert('You are correct!');
-// } else if (qThreeGuess === 'no' || qThreeGuess === 'n') {
-//   alert('Sorry, that was incorrect!');
-// } else {
-//   alert('That was not a yes or no response! However, I do have tattoos!');
-// }
+let qThreeGuess = prompt('Do I have any tattoos?').toLowerCase();
+if (qThreeGuess === 'yes' || qThreeGuess === 'y') {
+  score++;
+  // console.log(qThreeGuess);
+  alert('You are correct!');
+} else if (qThreeGuess === 'no' || qThreeGuess === 'n') {
+  alert('Sorry, that was incorrect!');
+} else {
+  alert('That was not a yes or no response! However, I do have tattoos!');
+}
 
-// let qFourGuess = prompt('Do I ride motorcycles?').toLowerCase();
-// if (qFourGuess === 'yes' || qFourGuess === 'y') {
-//   score++;
-//   // console.log(qFourGuess);
-//   alert('You are correct! I have a Honda Rebel 1100.');
-// } else if (qFourGuess === 'no' || qFourGuess === 'n') {
-//   alert('Sorry, that was incorrect!');
-// } else {
-//   alert('That was not a yes or no response! However, I do ride motorcycles.');
-// }
+let qFourGuess = prompt('Do I ride motorcycles?').toLowerCase();
+if (qFourGuess === 'yes' || qFourGuess === 'y') {
+  score++;
+  // console.log(qFourGuess);
+  alert('You are correct! I have a Honda Rebel 1100.');
+} else if (qFourGuess === 'no' || qFourGuess === 'n') {
+  alert('Sorry, that was incorrect!');
+} else {
+  alert('That was not a yes or no response! However, I do ride motorcycles.');
+}
 
-// let qFiveGuess = prompt('Do I have a beard?').toLowerCase();
-// if (qFiveGuess === 'yes' || qFiveGuess === 'y') {
-//   score++;
-//   // console.log(qFiveGuess);
-//   alert('You are correct!');
-// } else if (qFiveGuess === 'no' || qFiveGuess === 'n') {
-//   alert('Sorry, that was incorrect!');
-// } else {
-//   alert('That was not a yes or no response! However, I do have a beard!');
-// }
-// // todo: create a feedback loop of too high or too low until user guesses correct numeric value answer, convert answer to number from string, allow 4 chances to get correct answer, after all attempts tell user correct answer
-// // todo: MAKE THE PROMPT ONLY ACCEPT NUMERICAL VALUES, THIS THING IS A JERK
+let qFiveGuess = prompt('Do I have a beard?').toLowerCase();
+if (qFiveGuess === 'yes' || qFiveGuess === 'y') {
+  score++;
+  // console.log(qFiveGuess);
+  alert('You are correct!');
+} else if (qFiveGuess === 'no' || qFiveGuess === 'n') {
+  alert('Sorry, that was incorrect!');
+} else {
+  alert('That was not a yes or no response! However, I do have a beard!');
+}
+// todo: create a feedback loop of too high or too low until user guesses correct numeric value answer, convert answer to number from string, allow 4 chances to get correct answer, after all attempts tell user correct answer
+// todo: MAKE THE PROMPT ONLY ACCEPT NUMERICAL VALUES, THIS THING IS A JERK
 
-// // let myCodeTime = 3;
-// let qSixGuess = prompt('How many hours do I spend coding outside of the classroom every day?');
-// // let numConversion = Number(qSixGuess);
-// // any text input results in correct answer, need to fix
-// for (let i = 0; i < 4; i++) {
-//   if (i === 3) {
-//     alert(`Good try, ${userName}! The correct answer was 3`);
-//   }else if(qSixGuess < 3) {
-//     qSixGuess = prompt('That guess was too low! Try again.');
-//   }else if(qSixGuess > 3) {
-//     qSixGuess = prompt('That guess was too high! Try again.');
-//   }else {
-//     alert('Congrats 3 was correct!');
-//     score++;
-//     break;
-//   }
-// }
+// let myCodeTime = 3;
+let qSixGuess = prompt('How many hours do I spend coding outside of the classroom every day?');
+// let numConversion = Number(qSixGuess);
+// any text input results in correct answer, need to fix
+for (let i = 0; i < 4; i++) {
+  if (i === 3) {
+    alert(`Good try, ${userName}! The correct answer was 3`);
+  }else if(qSixGuess < 3) {
+    qSixGuess = prompt('That guess was too low! Try again.');
+  }else if(qSixGuess > 3) {
+    qSixGuess = prompt('That guess was too high! Try again.');
+  }else {
+    alert('Congrats 3 was correct!');
+    score++;
+    break;
+  }
+}
 
 
 // todo: make this stupid thing work 2/8/23
 // todo: 7th question has multiple correct answers stored in an array, give user 6 attempts, guessing ends on correct guess or run until out of attempts, display all possible answers to user
 let favFoods = ['american', ' mexican', ' chinese', ' thai', ' korean', ' japanese', ' french'];
 let numOfGuesses = 0;
-let loopBreak = true;
-while(numOfGuesses < 5 || loopBreak === true){
+let corrAns = true;
+while(numOfGuesses < 6 && corrAns === true){
   let qSevenGuess = prompt ('What is my favorite type of food? Hint: Think of country names').toLowerCase();
   for(let i = 0; i < favFoods.length; i++){
     if(qSevenGuess === favFoods[i]){
-      alert(`Congrats ${userName} you got one of them right! My other favorites are ` + favFoods);
+      alert(`Congrats ${userName} you got one of them right! All of my favorites are ` + favFoods);
       score++;
-      loopBreak = false;
+      corrAns = false; // dum dum way to break while loop
       break;
     }
     if(i === favFoods.length - 1){
@@ -110,7 +110,10 @@ while(numOfGuesses < 5 || loopBreak === true){
       alert('Incorrect, try again!');
     }
   }
-  // alert(`Sorry ${userName} you didn't guess any of my favorites! My favorites were ` + favFoods);
+}
+
+if(numOfGuesses === 6){
+  alert(`Sorry ${userName} you didn't guess any of my favorites! My favorites are ` + favFoods);
 }
 
 
