@@ -56,16 +56,19 @@ function questionThree() {
 }
 questionThree();
 
-let qFourGuess = prompt('Do I ride motorcycles?').toLowerCase();
-if (qFourGuess === 'yes' || qFourGuess === 'y') {
-  score++;
-  // console.log(qFourGuess);
-  alert('You are correct! I have a Honda Rebel 1100.');
-} else if (qFourGuess === 'no' || qFourGuess === 'n') {
-  alert('Sorry, that was incorrect!');
-} else {
-  alert('That was not a yes or no response! However, I do ride motorcycles.');
+function questionFour() {
+  let qFourGuess = prompt('Do I ride motorcycles?').toLowerCase();
+  if (qFourGuess === 'yes' || qFourGuess === 'y') {
+    score++;
+    // console.log(qFourGuess);
+    alert('You are correct! I have a Honda Rebel 1100.');
+  } else if (qFourGuess === 'no' || qFourGuess === 'n') {
+    alert('Sorry, that was incorrect!');
+  } else {
+    alert('That was not a yes or no response! However, I do ride motorcycles.');
+  }
 }
+questionFour();
 
 let qFiveGuess = prompt('Do I have a beard?').toLowerCase();
 if (qFiveGuess === 'yes' || qFiveGuess === 'y') {
