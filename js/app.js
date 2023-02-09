@@ -70,16 +70,19 @@ function questionFour() {
 }
 questionFour();
 
-let qFiveGuess = prompt('Do I have a beard?').toLowerCase();
-if (qFiveGuess === 'yes' || qFiveGuess === 'y') {
-  score++;
-  // console.log(qFiveGuess);
-  alert('You are correct!');
-} else if (qFiveGuess === 'no' || qFiveGuess === 'n') {
-  alert('Sorry, that was incorrect!');
-} else {
-  alert('That was not a yes or no response! However, I do have a beard!');
+function questionFive() {
+  let qFiveGuess = prompt('Do I have a beard?').toLowerCase();
+  if (qFiveGuess === 'yes' || qFiveGuess === 'y') {
+    score++;
+    // console.log(qFiveGuess);
+    alert('You are correct!');
+  } else if (qFiveGuess === 'no' || qFiveGuess === 'n') {
+    alert('Sorry, that was incorrect!');
+  } else {
+    alert('That was not a yes or no response! However, I do have a beard!');
+  }
 }
+questionFive();
 // DONE: create a feedback loop of too high or too low until user guesses correct numeric value answer, convert answer to number from string, allow 4 chances to get correct answer, after all attempts tell user correct answer
 // DONE: MAKE THE PROMPT ONLY ACCEPT NUMERICAL VALUES, THIS THING IS A JERK
 
