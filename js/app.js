@@ -42,16 +42,19 @@ function questionTwo() {
 }
 questionTwo();
 
-let qThreeGuess = prompt('Do I have any tattoos?').toLowerCase();
-if (qThreeGuess === 'yes' || qThreeGuess === 'y') {
-  score++;
-  // console.log(qThreeGuess);
-  alert('You are correct!');
-} else if (qThreeGuess === 'no' || qThreeGuess === 'n') {
-  alert('Sorry, that was incorrect!');
-} else {
-  alert('That was not a yes or no response! However, I do have tattoos!');
+function questionThree() {
+  let qThreeGuess = prompt('Do I have any tattoos?').toLowerCase();
+  if (qThreeGuess === 'yes' || qThreeGuess === 'y') {
+    score++;
+    // console.log(qThreeGuess);
+    alert('You are correct!');
+  } else if (qThreeGuess === 'no' || qThreeGuess === 'n') {
+    alert('Sorry, that was incorrect!');
+  } else {
+    alert('That was not a yes or no response! However, I do have tattoos!');
+  }
 }
+questionThree();
 
 let qFourGuess = prompt('Do I ride motorcycles?').toLowerCase();
 if (qFourGuess === 'yes' || qFourGuess === 'y') {
