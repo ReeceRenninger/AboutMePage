@@ -95,14 +95,14 @@ for (let i = 0; i < 4; i++) {
 // todo: 7th question has multiple correct answers stored in an array, give user 6 attempts, guessing ends on correct guess or run until out of attempts, display all possible answers to user
 let favFoods = ['american', ' mexican', ' chinese', ' thai', ' korean', ' japanese', ' french'];
 let numOfGuesses = 0;
-let corrAns = true;
-while(numOfGuesses < 6 && corrAns === true){
+let corrAns = false;
+while(numOfGuesses < 6 && corrAns === false){
   let qSevenGuess = prompt ('What is my favorite type of food? Hint: Think of country names').toLowerCase();
   for(let i = 0; i < favFoods.length; i++){
     if(qSevenGuess === favFoods[i]){
       alert(`Congrats ${userName} you got one of them right! All of my favorites are ` + favFoods);
       score++;
-      corrAns = false; // dum dum way to break while loop
+      corrAns = true; // dum dum way to break while loop
       break;
     }
     if(i === favFoods.length - 1){
