@@ -12,18 +12,21 @@ let userName = prompt('Hello! What is your name?'); {
 
 
 // todo: prompt 5 yes/no or y/n questions for the user to guess and alert when they are correct or incorrect
+function questionOne() {
+  let qOneGuess = prompt('Do I own dogs?').toLowerCase();
 
-let qOneGuess = prompt('Do I own dogs?').toLowerCase();
-
-if (qOneGuess === 'yes' || qOneGuess === 'y') {
-  score++;
-  // console.log(qOneGuess);
-  alert('You are correct! I have two dogs, Zelda and Link.');
-} else if (qOneGuess === 'no' || qOneGuess === 'n') {
-  alert('Sorry, that was incorrect!');
-} else {
-  alert('That was not a yes or no response! However, I do own dogs!');
+  if (qOneGuess === 'yes' || qOneGuess === 'y') {
+    score++;
+    // console.log(qOneGuess);
+    alert('You are correct! I have two dogs, Zelda and Link.');
+  } else if (qOneGuess === 'no' || qOneGuess === 'n') {
+    alert('Sorry, that was incorrect!');
+  } else {
+    alert('That was not a yes or no response! However, I do own dogs!');
+  }
 }
+questionOne();
+
 
 let qTwoGuess = prompt('Do I have a degree?').toLowerCase();
 
