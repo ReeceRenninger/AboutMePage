@@ -6,10 +6,21 @@ body{
 }
 
 h1 {
+  padding-bottom: 20px;
   font-size: 7vw;
   font-weight: 600;
   text-decoration:underline;
   text-align: center;
+}
+
+#selfiePic{
+
+  height: 600px;
+  border-radius: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px dashed red;
 }
 
 h2{
@@ -23,16 +34,9 @@ ul{
 
 ol{
   list-style-type: numbers;
+  padding-bottom: 15px;
 }
 
-#selfiePic{
-  height: 600px;
-  border-radius: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px dashed red;
-}
 
 
 footer{
