@@ -2,22 +2,17 @@
 
 let score = 0;
 
-// Todo: get users name - prompt and alert greeting back to user
-
 let userName = prompt('Hello! What is your name?'); {
 
   alert(`Welcome to my site ${userName}. You will now be asked a series of questions about me! Good luck!`);
 }
 
 
-
-// todo: prompt 5 yes/no or y/n questions for the user to guess and alert when they are correct or incorrect
 function questionOne() {
   let qOneGuess = prompt('Do I own dogs?').toLowerCase();
 
   if (qOneGuess === 'yes' || qOneGuess === 'y') {
     score++;
-    // console.log(qOneGuess);
     alert('You are correct! I have two dogs, Zelda and Link.');
   } else if (qOneGuess === 'no' || qOneGuess === 'n') {
     alert('Sorry, that was incorrect!');
@@ -32,7 +27,6 @@ function questionTwo() {
 
   if (qTwoGuess === 'yes' || qTwoGuess === 'y') {
     score++;
-    // console.log(qTwoGuess);
     alert('You are correct, I have a degree in Psychology!');
   } else if (qTwoGuess === 'no' || qTwoGuess === 'n') {
     alert('Sorry, that was incorrect!');
@@ -46,7 +40,6 @@ function questionThree() {
   let qThreeGuess = prompt('Do I have any tattoos?').toLowerCase();
   if (qThreeGuess === 'yes' || qThreeGuess === 'y') {
     score++;
-    // console.log(qThreeGuess);
     alert('You are correct!');
   } else if (qThreeGuess === 'no' || qThreeGuess === 'n') {
     alert('Sorry, that was incorrect!');
@@ -60,7 +53,6 @@ function questionFour() {
   let qFourGuess = prompt('Do I ride motorcycles?').toLowerCase();
   if (qFourGuess === 'yes' || qFourGuess === 'y') {
     score++;
-    // console.log(qFourGuess);
     alert('You are correct! I have a Honda Rebel 1100.');
   } else if (qFourGuess === 'no' || qFourGuess === 'n') {
     alert('Sorry, that was incorrect!');
@@ -74,7 +66,6 @@ function questionFive() {
   let qFiveGuess = prompt('Do I have a beard?').toLowerCase();
   if (qFiveGuess === 'yes' || qFiveGuess === 'y') {
     score++;
-    // console.log(qFiveGuess);
     alert('You are correct!');
   } else if (qFiveGuess === 'no' || qFiveGuess === 'n') {
     alert('Sorry, that was incorrect!');
@@ -83,8 +74,6 @@ function questionFive() {
   }
 }
 questionFive();
-// DONE: create a feedback loop of too high or too low until user guesses correct numeric value answer, convert answer to number from string, allow 4 chances to get correct answer, after all attempts tell user correct answer
-// DONE: MAKE THE PROMPT ONLY ACCEPT NUMERICAL VALUES, THIS THING IS A JERK
 
 function questionSix() {
   let myCodeTime = 3;
@@ -108,8 +97,6 @@ function questionSix() {
 questionSix();
 
 
-// todo: I made this stupid thing work and I am proud, don't touch this.
-// todo: 7th question has multiple correct answers stored in an array, give user 6 attempts, guessing ends on correct guess or run until out of attempts, display all possible answers to user
 function questionSeven() {
   let favFoods = ['american', ' mexican', ' chinese', ' thai', ' korean', ' japanese', ' french'];
   let numOfGuesses = 0;
@@ -120,7 +107,7 @@ function questionSeven() {
       if (qSevenGuess === favFoods[i]) {
         alert(`Congrats ${userName} you got one of them right! All of my favorites are ` + favFoods);
         score++;
-        corrAns = true; // dum dum way to break while loop
+        corrAns = true;
         break;
       }
       if (i === favFoods.length - 1) {
@@ -137,9 +124,5 @@ questionSeven();
 
 
 
-
-
-
-// todo: give them a final message with their name in the alert
 
 alert(`Thanks for playing my game ${userName}, you scored ${score} out of 7!`);
